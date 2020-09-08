@@ -58,6 +58,7 @@ button {
 }
 
 .navigation-list-link {
+  transition: 250ms;
   display: block;
   padding-top: 32px;
   padding-bottom: 30px;
@@ -72,7 +73,6 @@ button {
 
 .navigation-list-link:hover,
 .navigation-list-link:focus {
-  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--accent-color);
   border-bottom: 2px solid var(--accent-color);
@@ -96,6 +96,7 @@ button {
   margin-right: 30px;
 }
 .header-tel-link-svg {
+  transition: 250ms;
   display: block;
   fill: #757575;
   width: 10px;
@@ -103,6 +104,7 @@ button {
   margin-right: 10px;
 }
 .header-mail-link-svg {
+  transition: 250ms;
   display: block;
   fill: #757575;
   width: 16px;
@@ -111,6 +113,7 @@ button {
 }
 .header-tel-link,
 .header-mail-link {
+  transition: 250ms;
   display: block;
   font-style: normal;
   font-weight: 500;
@@ -126,25 +129,21 @@ button {
 }
 .header-tel-link:hover .header-tel-link-svg,
 .header-tel-link:focus .header-tel-link-svg {
-  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--accent-color);
 }
 .header-tel-link:hover,
 .header-tel-link:focus {
-  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--accent-color);
 }
 .header-mail-link:hover .header-mail-link-svg,
 .header-mail-link:focus .header-mail-link-svg {
-  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--accent-color);
 }
 .header-mail-link:hover,
 .header-mail-link:focus {
-  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--accent-color);
 }
@@ -210,11 +209,11 @@ button {
 }
 .modal-button:hover,
 .modal-button:focus {
-  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: lightgray;
 }
 .modal-button {
+  transition: 250ms;
   min-width: 200px;
   display: inline-block;
   border-radius: 4px;
@@ -231,6 +230,7 @@ button {
 }
 /* ===== Form ===== */
 .backdrop {
+  transition: 250ms;
   position: fixed;
   top: 0;
   left: 0;
@@ -240,6 +240,7 @@ button {
   z-index: 1;
 }
 .backdrop.is-hidden {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
   transform: scale(0);
 }
@@ -255,6 +256,7 @@ button {
   background-color: #fff;
 }
 .close-button {
+  transition: 250ms;
   position: absolute;
   width: 30px;
   height: 30px;
@@ -266,17 +268,18 @@ button {
 }
 .close-button:hover .close-button-svg,
 .close-button:focus .close-button-svg {
-  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--accent-color);
 }
 .close-button-svg {
+  transition: 250ms;
   width: 11px;
   height: 11px;
   margin-right: auto;
   margin-left: auto;
 }
 textarea {
+  transition: 250ms;
   resize: none;
 }
 .form {
@@ -297,6 +300,7 @@ textarea {
   color: var(--main-font-color);
 }
 .form-field {
+  transition: 250ms;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -305,13 +309,11 @@ textarea {
 
 .form-field:hover .form-svg,
 .form-field:focus .form-svg {
-  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--accent-color);
 }
 .form-field:hover input,
 .form-field:focus input {
-  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
   border: 1px solid var(--accent-color);
@@ -331,6 +333,7 @@ textarea {
   color: #757575;
 }
 .form-svg {
+  transition: 250ms;
   position: absolute;
   width: 18px;
   height: 18px;
@@ -345,6 +348,7 @@ textarea {
   padding-left: 42px;
 }
 .form-field-text {
+  transition: 250ms;
   margin-bottom: 20px;
 }
 .form-field-text textarea {
@@ -363,7 +367,6 @@ textarea {
 }
 .form-field-text:hover textarea,
 .form-field-text:focus textarea {
-  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
   border: 1px solid var(--accent-color);
@@ -655,11 +658,11 @@ textarea {
 }
 .social-list-item-link:hover,
 .social-list-item-link:focus {
-  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--accent-color);
 }
 .social-list-item-link {
+  transition: 250ms;
   display: block;
   display: flex;
   justify-content: center;
@@ -671,14 +674,11 @@ textarea {
 }
 .social-list-item-link:hover .social-list-item-link-svg,
 .social-list-item-link:focus .social-list-item-link-svg {
-  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--white-color);
 }
 .clients-list-item-link:hover,
 .clients-list-item-link:focus {
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--accent-color);
 }
 .social-list-item:not(:last-child) {
@@ -686,6 +686,7 @@ textarea {
 }
 
 .social-list-item-link-svg {
+  transition: 250ms;
   width: 20px;
   height: 20px;
   fill: #afb1b8;
@@ -729,6 +730,7 @@ textarea {
   margin-right: 30;
 }
 .clients-list-item-link {
+  transition: 250ms;
   display: block;
   display: flex;
   justify-content: center;
@@ -741,7 +743,6 @@ textarea {
 }
 .clients-list-item-link:hover,
 .clients-list-item-link:focus {
-  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid var(--accent-color);
 }
@@ -750,11 +751,11 @@ textarea {
 }
 .clients-list-item-link:hover .clients-list-item-link-svg,
 .clients-list-item-link:focus .clients-list-item-link-svg {
-  fill: var(--accent-color);
-  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--accent-color);
 }
 .clients-list-item-link-svg {
+  transition: 250ms;
   fill: #afb1b8;
 }
 .footer {
@@ -844,6 +845,7 @@ textarea {
   align-items: start;
 }
 .social-footer {
+  transition: 250ms;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -852,11 +854,11 @@ textarea {
 }
 .social-list-footer-item-link:hover,
 .social-list-footer-item-link:focus {
-  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--accent-color);
 }
 .social-list-footer-item-link {
+  transition: 250ms;
   display: block;
   display: flex;
   justify-content: center;
@@ -868,26 +870,26 @@ textarea {
 }
 .social-list-footer-item-link:hover .social-list-footer-item-link-svg,
 .social-list-footer-item-link:focus .social-list-footer-item-link-svg {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--white-color);
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-list-footer-item-link:hover,
+/* .clients-list-footer-item-link:hover,
 .clients-list-footer-item-link:focus {
-  color: var(--accent-color);
-  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  color: var(--accent-color);
+} */
 .social-list-footer-item:not(:last-child) {
   margin-right: 10px;
 }
 
 .social-list-footer-item-link-svg {
+  transition: 250ms;
   width: 20px;
   height: 20px;
   fill: #fff;
 }
 .subscription {
+  transition: 250ms;
   padding-top: 12px;
 }
 .subscription:focus-within {
@@ -948,6 +950,7 @@ textarea {
   margin-bottom: 56px;
 }
 .nav-button {
+  transition: 250ms;
   border: 1px solid transparent;
   border-radius: 4px;
   color: var(--main-font-color);
@@ -963,7 +966,6 @@ textarea {
 
 .nav-button:hover,
 .nav-button:focus {
-  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--white-color);
   background-color: var(--accent-color);
@@ -977,6 +979,7 @@ textarea {
   flex-wrap: wrap;
 }
 .portfolio-item {
+  transition: 250ms;
   widows: 380px;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -989,7 +992,6 @@ textarea {
 }
 .portfolio-item:hover,
 .portfolio-item:focus {
-  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1023,14 +1025,15 @@ textarea {
 .portfolio-item:hover .overlay {
   transform: translateY(0%);
   overflow: visible;
-  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
 }
 .img-portfolio-box {
   position: relative;
+  overflow: hidden;
 }
 .overlay {
+  transition: 250ms;
   padding-top: 63px;
   padding-left: 24px;
   padding-right: 24px;
