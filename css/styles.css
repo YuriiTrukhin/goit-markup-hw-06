@@ -318,12 +318,13 @@ textarea {
 
 .form-input:hover + .form-svg,
 .form-input:focus + .form-svg {
-  color: #2196f3;
-  fill: #2196f3;
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 .form-input:hover,
 .form-input:focus {
-  border-color: #2196f3;
+  border-color: var(--accent-color);
+  outline: none;
 }
 .form-label {
   position: absolute;
@@ -348,6 +349,7 @@ textarea {
   height: 18px;
   left: 12px;
   transform: translateY(50%);
+  pointer-events: none;
 }
 .form-input {
   transition: 250ms;
@@ -364,7 +366,7 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 20px;
 }
-.form-field-text textarea {
+.form-text-area {
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   width: 448px;
@@ -380,12 +382,13 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
   padding: 16px 12px;
 }
-.form-field-text:hover textarea,
-.form-field-text:focus textarea {
-  color: var(--accent-color);
-  border: 1px solid var(--accent-color);
+
+.form-text-area:hover,
+.form-text-area:focus {
+  color: var(--main-font-color);
   border-color: var(--accent-color);
   cursor: pointer;
+  outline: none;
 }
 .form-agreement {
   margin-right: auto;
