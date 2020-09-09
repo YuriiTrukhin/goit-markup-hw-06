@@ -92,31 +92,47 @@
                   Оставьте свои данные, мы вам перезвоним
                 </h2>
                 <div class="form-field">
-                  <input type="text" name="name" id="name" />
-                  <label for="name">Имя</label>
-                  <svg class="form-svg">
-                    <use
-                      href="./images/vector_icon/sprite.svg#icon-person-black"
-                    ></use>
-                  </svg>
+                  <label class="form-label" for="name">Имя</label>
+                  <div class="form-input-svg">
+                    <input
+                      class="form-input"
+                      type="text"
+                      name="name"
+                      id="name"
+                    />
+                    <svg class="form-svg">
+                      <use
+                        href="./images/vector_icon/sprite.svg#icon-person-black"
+                      ></use>
+                    </svg>
+                  </div>
                 </div>
                 <div class="form-field">
-                  <input type="tel" name="tel" id="tel" />
-                  <label for="tel">Телефон</label>
-                  <svg class="form-svg">
-                    <use
-                      href="./images/vector_icon/sprite.svg#icon-phone-black"
-                    ></use>
-                  </svg>
+                  <label class="form-label" for="tel">Телефон</label>
+                  <div class="form-input-svg">
+                    <input class="form-input" type="tel" name="tel" id="tel" />
+                    <svg class="form-svg">
+                      <use
+                        href="./images/vector_icon/sprite.svg#icon-phone-black"
+                      ></use>
+                    </svg>
+                  </div>
                 </div>
                 <div class="form-field">
-                  <input type="email" name="mail" id="mail" />
-                  <label for="mail">Почта</label>
-                  <svg class="form-svg">
-                    <use
-                      href="./images/vector_icon/sprite.svg#icon-email-black"
-                    ></use>
-                  </svg>
+                  <label class="form-label" for="mail">Почта</label>
+                  <div class="form-input-svg">
+                    <input
+                      class="form-input"
+                      type="email"
+                      name="mail"
+                      id="mail"
+                    />
+                    <svg class="form-svg">
+                      <use
+                        href="./images/vector_icon/sprite.svg#icon-email-black"
+                      ></use>
+                    </svg>
+                  </div>
                 </div>
                 <div class="form-field-text">
                   <label for="comment">Комментарий</label>
@@ -746,13 +762,13 @@
           <div class="subscription-box">
             <form class="subscription-form" action="#">
               <input type="email" name="mail" id="email" placeholder="E-mail" />
+              <button class="subscription-button" type="submit">
+                Подписаться
+                <svg class="subscription-svg">
+                  <use href="./images/vector_icon/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
             </form>
-            <button class="subscription-button" type="submit">
-              Подписаться
-              <svg class="subscription-svg">
-                <use href="./images/vector_icon/sprite.svg#icon-send"></use>
-              </svg>
-            </button>
           </div>
         </div>
       </div>

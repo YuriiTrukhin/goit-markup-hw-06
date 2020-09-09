@@ -316,19 +316,16 @@ textarea {
   margin-bottom: 28px;
 }
 
-.form-field:hover .form-svg,
-.form-field:focus .form-svg,
-.form-field:active .form-svg {
-  fill: var(--accent-color);
+.form-input:hover + .form-svg,
+.form-input:focus + .form-svg {
+  color: #2196f3;
+  fill: #2196f3;
 }
-.form-field:hover input,
-.form-field:focus input,
-.form-field:active input {
-  border-color: var(--accent-color);
-  cursor: pointer;
+.form-input:hover,
+.form-input:focus {
+  border-color: #2196f3;
 }
-
-.form-field label {
+.form-label {
   position: absolute;
   top: -50%;
   margin-bottom: 4px;
@@ -340,6 +337,9 @@ textarea {
   letter-spacing: 0.01em;
   color: #757575;
 }
+.form-input-svg {
+  position: relative;
+}
 .form-svg {
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -347,9 +347,9 @@ textarea {
   width: 18px;
   height: 18px;
   left: 12px;
-  top: 11px;
+  transform: translateY(50%);
 }
-.form-field input {
+.form-input {
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   width: 448px;
@@ -357,6 +357,7 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
+  cursor: pointer;
 }
 .form-field-text {
   transition: 250ms;
@@ -381,7 +382,7 @@ textarea {
 }
 .form-field-text:hover textarea,
 .form-field-text:focus textarea {
-  outline: none;
+  color: var(--accent-color);
   border: 1px solid var(--accent-color);
   border-color: var(--accent-color);
   cursor: pointer;
@@ -918,6 +919,11 @@ textarea {
   color: #ffffff;
 }
 .subscription-box {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.subscription-form {
   display: flex;
   justify-items: center;
   align-items: center;
