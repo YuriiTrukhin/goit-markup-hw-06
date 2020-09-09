@@ -405,14 +405,20 @@
           <h2 class="subscription-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
           <div class="subscription-box">
             <form class="subscription-form" action="#">
-              <input type="email" name="mail" id="email" placeholder="E-mail" />
+              <input
+                class="subscription-form-input"
+                type="email"
+                name="mail"
+                id="email"
+                placeholder="E-mail"
+              />
+              <button class="subscription-button" type="submit">
+                Подписаться
+                <svg class="subscription-svg">
+                  <use href="./images/vector_icon/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
             </form>
-            <button class="subscription-button" type="submit">
-              Подписаться
-              <svg class="subscription-svg">
-                <use href="./images/vector_icon/sprite.svg#icon-send"></use>
-              </svg>
-            </button>
           </div>
         </div>
       </div>

@@ -931,7 +931,7 @@ textarea {
   justify-items: center;
   align-items: center;
 }
-.subscription-form input {
+.subscription-form-input {
   width: 358px;
   height: 50px;
   padding-left: 16px;
