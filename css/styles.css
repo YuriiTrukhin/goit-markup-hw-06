@@ -229,8 +229,7 @@ button {
 }
 /* ===== Form ===== */
 .backdrop {
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms linear;
   position: fixed;
   top: 0;
   left: 0;
@@ -239,11 +238,15 @@ button {
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-.backdrop.is-hidden {
+.is-hidden {
   opacity: 0;
-  transform: scale(0);
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 250ms linear 500ms;
 }
 .modal {
+  transition: transform 500ms linear 500ms;
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -254,9 +257,11 @@ button {
 
   background-color: #fff;
 }
+.backdrop.is-hidden .modal {
+  transform: translateX(-50%) scale(0);
+  transition: transform 500ms linear 0s;
+}
 .close-button {
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   width: 30px;
   height: 30px;
@@ -269,6 +274,7 @@ button {
   padding-left: 5px;
   padding-right: 5px;
 }
+
 .close-button:hover .close-button-svg,
 .close-button:focus .close-button-svg {
   fill: var(--accent-color);
